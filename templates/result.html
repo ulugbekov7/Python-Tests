@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natijalar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .result {
+            margin-top: 50px;
+            padding: 20px;
+            background: white;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .correct { color: green; font-weight: bold; }
+        .incorrect { color: red; font-weight: bold; }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="result">
+    <h2>Test Natijalari</h2>
+    <p><span class="correct">To‘g‘ri javoblar:</span> {{ correct }}</p>
+    <p><span class="incorrect">Noto‘g‘ri javoblar:</span> {{ incorrect }}</p>
+    <h3 class="score">Umumiy ball: <strong>{{ score }}</strong></h3>
+    <a href="/" class="btn">Bosh sahifaga qaytish</a>
+</div>
+
+</body>
+</html>
